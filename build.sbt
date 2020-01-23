@@ -64,6 +64,7 @@ val sharedSettings = Seq(
 lazy val blog = Project(
   id = "blog",
   base = file("."))
+  .settings(sharedSettings)
   .settings(
     libraryDependencies ++= Seq(
      "com.stripe" %% "rainier-cats" % V.rainier,
